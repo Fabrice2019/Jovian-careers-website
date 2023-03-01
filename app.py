@@ -36,6 +36,16 @@ def hello_world():
 def list_jobs():
   return jsonify(JOBS)
 
+@app.route('/login', methods=['POST', 'GET'])
+def login():
+   
+    return render_template('login.html',)
+
+@app.route('/signup', methods=['POST', 'GET'])
+def signup():
+   
+    return render_template('signup.html',)
+
 if __name__==__name__:
    app.run(host='0.0.0',debug=True)
   
